@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -1278.0, 667.0, 1244.0, 722.0 ],
+		"rect" : [ 34.0, 184.0, 1244.0, 722.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
@@ -21,7 +21,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1203.666701793670654, 113.333336710929871, 50.0, 22.0 ]
+					"patching_rect" : [ 1055.0, 11.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -416,7 +416,7 @@
 
 							}
  ],
-						"originid" : "pat-6"
+						"originid" : "pat-222"
 					}
 ,
 					"patching_rect" : [ 1011.500030517578125, 270.666674733161926, 75.0, 22.0 ],
@@ -546,9 +546,9 @@
 				"box" : 				{
 					"id" : "obj-40",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 0,
 					"numoutlets" : 3,
-					"outlettype" : [ "float", "float", "float" ],
+					"outlettype" : [ "", "", "" ],
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
@@ -563,55 +563,6 @@
 						"rect" : [ 126.0, 117.0, 1000.0, 780.0 ],
 						"gridsize" : [ 15.0, 15.0 ],
 						"boxes" : [ 							{
-								"box" : 								{
-									"comment" : "",
-									"id" : "obj-12",
-									"index" : 1,
-									"maxclass" : "inlet",
-									"numinlets" : 0,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 525.0, 400.0, 30.0, 30.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-11",
-									"maxclass" : "newobj",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "float" ],
-									"patching_rect" : [ 370.0, 473.0, 29.5, 22.0 ],
-									"text" : "+ 0."
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-10",
-									"maxclass" : "newobj",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "float" ],
-									"patching_rect" : [ 240.0, 473.0, 29.5, 22.0 ],
-									"text" : "+ 0."
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-9",
-									"maxclass" : "newobj",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "float" ],
-									"patching_rect" : [ 114.0, 473.0, 29.5, 22.0 ],
-									"text" : "+ 0."
-								}
-
-							}
-, 							{
 								"box" : 								{
 									"id" : "obj-6",
 									"maxclass" : "newobj",
@@ -631,7 +582,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 370.0, 546.0, 30.0, 30.0 ]
+									"patching_rect" : [ 420.0, 546.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -666,7 +617,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "float" ],
-									"patching_rect" : [ 370.0, 234.0, 40.0, 22.0 ],
+									"patching_rect" : [ 420.0, 234.0, 40.0, 22.0 ],
 									"text" : "* 1.02"
 								}
 
@@ -712,11 +663,11 @@
 								"box" : 								{
 									"id" : "obj-22",
 									"maxclass" : "newobj",
-									"numinlets" : 2,
+									"numinlets" : 6,
 									"numoutlets" : 1,
-									"outlettype" : [ "float" ],
-									"patching_rect" : [ 370.0, 388.0, 29.5, 22.0 ],
-									"text" : "+ 1."
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 420.0, 388.0, 134.0, 22.0 ],
+									"text" : "scale -1. 1. 0.001 0.999"
 								}
 
 							}
@@ -727,7 +678,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "float" ],
-									"patching_rect" : [ 370.0, 349.0, 64.0, 22.0 ],
+									"patching_rect" : [ 420.0, 349.0, 64.0, 22.0 ],
 									"text" : "snapshot~"
 								}
 
@@ -739,8 +690,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 370.0, 277.0, 76.0, 22.0 ],
-									"text" : "cycle~ 0.013"
+									"patching_rect" : [ 420.0, 277.0, 151.0, 22.0 ],
+									"text" : "cycle~ 0.013 @phase 0.66"
 								}
 
 							}
@@ -748,11 +699,11 @@
 								"box" : 								{
 									"id" : "obj-19",
 									"maxclass" : "newobj",
-									"numinlets" : 2,
+									"numinlets" : 6,
 									"numoutlets" : 1,
-									"outlettype" : [ "float" ],
-									"patching_rect" : [ 242.0, 388.0, 29.5, 22.0 ],
-									"text" : "+ 1."
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 242.0, 388.0, 134.0, 22.0 ],
+									"text" : "scale -1. 1. 0.001 0.999"
 								}
 
 							}
@@ -775,8 +726,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 242.0, 277.0, 76.0, 22.0 ],
-									"text" : "cycle~ 0.012"
+									"patching_rect" : [ 242.0, 277.0, 151.0, 22.0 ],
+									"text" : "cycle~ 0.012 @phase 0.33"
 								}
 
 							}
@@ -784,11 +735,11 @@
 								"box" : 								{
 									"id" : "obj-8",
 									"maxclass" : "newobj",
-									"numinlets" : 2,
+									"numinlets" : 6,
 									"numoutlets" : 1,
-									"outlettype" : [ "float" ],
-									"patching_rect" : [ 114.0, 388.0, 29.5, 22.0 ],
-									"text" : "+ 1."
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 114.0, 388.0, 134.0, 22.0 ],
+									"text" : "scale -1. 1. 0.001 0.999"
 								}
 
 							}
@@ -856,44 +807,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-3", 0 ],
-									"source" : [ "obj-10", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-5", 0 ],
-									"source" : [ "obj-11", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-10", 1 ],
-									"order" : 1,
-									"source" : [ "obj-12", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-11", 1 ],
-									"order" : 0,
-									"source" : [ "obj-12", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-9", 1 ],
-									"order" : 2,
-									"source" : [ "obj-12", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-10", 0 ],
 									"source" : [ "obj-19", 0 ]
 								}
 
@@ -914,7 +827,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-11", 0 ],
+									"destination" : [ "obj-5", 0 ],
 									"source" : [ "obj-22", 0 ]
 								}
 
@@ -1001,23 +914,16 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-9", 0 ],
+									"destination" : [ "obj-2", 0 ],
 									"source" : [ "obj-8", 0 ]
 								}
 
 							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-2", 0 ],
-									"source" : [ "obj-9", 0 ]
-								}
-
-							}
  ],
-						"originid" : "pat-8"
+						"originid" : "pat-224"
 					}
 ,
-					"patching_rect" : [ 1178.666701793670654, 189.333338975906372, 75.0, 22.0 ],
+					"patching_rect" : [ 897.0, 32.0, 75.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"globalpatchername" : ""
 					}
@@ -1067,7 +973,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "preset", "int", "preset", "int", "" ],
-					"patching_rect" : [ 132.000003933906555, 228.000006794929504, 103.0, 41.0 ],
+					"patching_rect" : [ 131.0, 204.0, 103.0, 41.0 ],
 					"pattrstorage" : "nfbt"
 				}
 
@@ -1706,7 +1612,7 @@
 
 							}
  ],
-						"originid" : "pat-120"
+						"originid" : "pat-328"
 					}
 ,
 					"patching_rect" : [ 10.666666984558105, 601.333351254463196, 79.0, 22.0 ],
@@ -2150,13 +2056,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-40", 0 ],
-					"source" : [ "obj-61", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-19", 0 ],
 					"source" : [ "obj-7", 0 ]
 				}
@@ -2177,7 +2076,7 @@
 
 			}
  ],
-		"originid" : "pat-4",
+		"originid" : "pat-220",
 		"parameters" : 		{
 			"obj-18" : [ "attrui", "attrui", 0 ],
 			"obj-35::obj-100" : [ "Speed[1]", "Speed", 1 ],
@@ -2593,97 +2492,113 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "bfgenerator_UI.maxpat",
-				"bootpath" : "C74:/packages/Vizzie/patchers/bfg",
+				"bootpath" : "~/Documents/NYU/DMGY-6103-2025/projects/joshviz/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "data-handler-L.maxpat",
-				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
+				"bootpath" : "~/Documents/NYU/DMGY-6103-2025/projects/joshviz/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "data-handler.maxpat",
-				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
+				"bootpath" : "~/Documents/NYU/DMGY-6103-2025/projects/joshviz/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "distorted_controls.maxpat",
-				"bootpath" : "C74:/packages/Vizzie/patchers/bfg",
+				"bootpath" : "~/Documents/NYU/DMGY-6103-2025/projects/joshviz/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "exact_menu.maxpat",
-				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
+				"bootpath" : "~/Documents/NYU/DMGY-6103-2025/projects/joshviz/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fractal_fbm_controls.maxpat",
-				"bootpath" : "C74:/packages/Vizzie/patchers/bfg",
+				"bootpath" : "~/Documents/NYU/DMGY-6103-2025/projects/joshviz/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fractal_hetero_controls.maxpat",
-				"bootpath" : "C74:/packages/Vizzie/patchers/bfg",
+				"bootpath" : "~/Documents/NYU/DMGY-6103-2025/projects/joshviz/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fractal_hybrid_controls.maxpat",
-				"bootpath" : "C74:/packages/Vizzie/patchers/bfg",
+				"bootpath" : "~/Documents/NYU/DMGY-6103-2025/projects/joshviz/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fractal_multi_controls.maxpat",
-				"bootpath" : "C74:/packages/Vizzie/patchers/bfg",
+				"bootpath" : "~/Documents/NYU/DMGY-6103-2025/projects/joshviz/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fractal_rigid_controls.maxpat",
-				"bootpath" : "C74:/packages/Vizzie/patchers/bfg",
+				"bootpath" : "~/Documents/NYU/DMGY-6103-2025/projects/joshviz/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fx.brcosa.genjit",
-				"bootpath" : "C74:/packages/Jitter Tools/code/fx/gen",
+				"bootpath" : "~/Documents/NYU/DMGY-6103-2025/projects/joshviz/code",
+				"patcherrelativepath" : "../code",
 				"type" : "gJIT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jit.fx.include.attrs.js",
-				"bootpath" : "C74:/packages/Jitter Tools/code/fx/js",
+				"bootpath" : "~/Documents/NYU/DMGY-6103-2025/projects/joshviz/code",
+				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jit.fx.include.base.js",
-				"bootpath" : "C74:/packages/Jitter Tools/code/fx/js",
+				"bootpath" : "~/Documents/NYU/DMGY-6103-2025/projects/joshviz/code",
+				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jit.fx.include.input.js",
-				"bootpath" : "C74:/packages/Jitter Tools/code/fx/js",
+				"bootpath" : "~/Documents/NYU/DMGY-6103-2025/projects/joshviz/code",
+				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jit.fx.include.js",
-				"bootpath" : "C74:/packages/Jitter Tools/code/fx/js",
+				"bootpath" : "~/Documents/NYU/DMGY-6103-2025/projects/joshviz/code",
+				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jit.fx.rota.js",
-				"bootpath" : "C74:/packages/Jitter Tools/code/fx/js",
+				"bootpath" : "~/Documents/NYU/DMGY-6103-2025/projects/joshviz/code",
+				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
@@ -2693,80 +2608,92 @@
 			}
 , 			{
 				"name" : "lo_hi_UI_control.maxpat",
-				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
+				"bootpath" : "~/Documents/NYU/DMGY-6103-2025/projects/joshviz/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "nfbt.json",
-				"bootpath" : "~/Desktop",
-				"patcherrelativepath" : "../../../../../../Desktop",
+				"bootpath" : "~/Documents/NYU/DMGY-6103-2025/projects/joshviz/data",
+				"patcherrelativepath" : "../data",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "noise_voronoi_controls.maxpat",
-				"bootpath" : "C74:/packages/Vizzie/patchers/bfg",
+				"bootpath" : "~/Documents/NYU/DMGY-6103-2025/projects/joshviz/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "noise_voronoi_crackle_controls.maxpat",
-				"bootpath" : "C74:/packages/Vizzie/patchers/bfg",
+				"bootpath" : "~/Documents/NYU/DMGY-6103-2025/projects/joshviz/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "noise_voronoi_id_controls.maxpat",
-				"bootpath" : "C74:/packages/Vizzie/patchers/bfg",
+				"bootpath" : "~/Documents/NYU/DMGY-6103-2025/projects/joshviz/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "noise_voronoi_smooth_controls.maxpat",
-				"bootpath" : "C74:/packages/Vizzie/patchers/bfg",
+				"bootpath" : "~/Documents/NYU/DMGY-6103-2025/projects/joshviz/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "noise_voronoise_controls.maxpat",
-				"bootpath" : "C74:/packages/Vizzie/patchers/bfg",
+				"bootpath" : "~/Documents/NYU/DMGY-6103-2025/projects/joshviz/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vizzie-datatexconvert.js",
-				"bootpath" : "C74:/packages/Vizzie/code",
+				"bootpath" : "~/Documents/NYU/DMGY-6103-2025/projects/joshviz/code",
+				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vizzie-global.js",
-				"bootpath" : "C74:/packages/Vizzie/code",
+				"bootpath" : "~/Documents/NYU/DMGY-6103-2025/projects/joshviz/code",
+				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vz.bfgener8r.maxpat",
-				"bootpath" : "C74:/packages/Vizzie/patchers",
+				"bootpath" : "~/Documents/NYU/DMGY-6103-2025/projects/joshviz/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vzgl-blackframe.maxpat",
-				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
+				"bootpath" : "~/Documents/NYU/DMGY-6103-2025/projects/joshviz/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vzgl-object.maxpat",
-				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
+				"bootpath" : "~/Documents/NYU/DMGY-6103-2025/projects/joshviz/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vzgl-outputdim.maxpat",
-				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
+				"bootpath" : "~/Documents/NYU/DMGY-6103-2025/projects/joshviz/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
