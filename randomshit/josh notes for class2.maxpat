@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 59.0, 106.0, 1000.0, 780.0 ],
+		"rect" : [ 224.0, 503.0, 997.0, 780.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
@@ -39,12 +39,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-10",
-					"linecount" : 4,
+					"linecount" : 8,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 634.0, 472.0, 150.0, 74.0 ],
-					"text" : "1) show these\n2) animate \n3) use as fade 4 alphablendr\n"
+					"patching_rect" : [ 188.0, 50.0, 150.0, 127.0 ],
+					"text" : "1) show these\n2) animate \n2.5) THE VIDEO CODEC LECTURE \n3) use as fade 4 alphablendr\n4) mix 2 BFGs with multiplier\n"
 				}
 
 			}
@@ -171,7 +171,7 @@
 
 			}
  ],
-		"originid" : "pat-786",
+		"originid" : "pat-1228",
 		"parameters" : 		{
 			"obj-22::obj-1" : [ "Blendmode ", "Blendmode ", 0 ],
 			"obj-22::obj-17::obj-23" : [ "gswitch2[3]", "gswitch2", 0 ],
