@@ -14,12 +14,24 @@
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-17",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "jit_gl_texture", "" ],
+					"patching_rect" : [ 42.0, 248.0, 147.0, 22.0 ],
+					"text" : "jit.fx.ameba @steps 25 25"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-16",
 					"maxclass" : "jit.pwindow",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 170.0, 141.0, 80.0, 60.0 ],
+					"patching_rect" : [ 80.0, 103.0, 188.0, 124.0 ],
 					"sync" : 1
 				}
 
@@ -44,7 +56,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 192.0, 92.0, 199.0, 33.0 ],
+					"patching_rect" : [ 80.0, 46.0, 199.0, 33.0 ],
 					"presentation_linecount" : 3,
 					"text" : "this node is capturing its contents and sending it out as a texture"
 				}
@@ -70,7 +82,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "jit_gl_texture", "", "" ],
-					"patching_rect" : [ 154.0, 64.0, 226.0, 22.0 ],
+					"patching_rect" : [ 42.0, 18.0, 226.0, 22.0 ],
 					"text" : "jit.gl.node fun @name kubes @capture 1"
 				}
 
@@ -216,7 +228,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 49.0, 10.0, 150.0, 22.0 ]
+					"patching_rect" : [ 70.0, 310.0, 150.0, 22.0 ]
 				}
 
 			}
@@ -310,7 +322,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "jit_matrix", "bang", "" ],
-					"patching_rect" : [ 44.0, 261.0, 313.0, 22.0 ],
+					"patching_rect" : [ 42.0, 357.0, 313.0, 22.0 ],
 					"text" : "jit.world fun @erase_color 0 0 0 1 @enable 1 @floating 1"
 				}
 
@@ -333,7 +345,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
+					"destination" : [ "obj-17", 0 ],
 					"order" : 1,
 					"source" : [ "obj-12", 0 ]
 				}
@@ -343,6 +355,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-24", 1 ],
 					"source" : [ "obj-125", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"source" : [ "obj-17", 0 ]
 				}
 
 			}
@@ -426,6 +445,12 @@
  ],
 		"originid" : "pat-685",
 		"dependency_cache" : [ 			{
+				"name" : "fx.ameba.genjit",
+				"bootpath" : "C74:/packages/Jitter Tools/code/fx/gen",
+				"type" : "gJIT",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "mynoise.maxpat",
 				"bootpath" : "~/Documents/NYU/DMGY-6103-2025/Class03/josh",
 				"patcherrelativepath" : ".",
