@@ -201,7 +201,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 614.0, 80.0, 229.0, 20.0 ],
+					"patching_rect" : [ 591.0, 109.5, 229.0, 20.0 ],
 					"text" : "Move this to change the speed"
 				}
 
@@ -214,7 +214,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 614.0, 109.0, 285.0, 53.0 ],
+					"patching_rect" : [ 591.0, 138.5, 285.0, 53.0 ],
 					"size" : 3000.0
 				}
 
@@ -239,7 +239,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 474.0, 42.0, 49.0, 22.0 ],
+					"patching_rect" : [ 461.0, 141.0, 49.0, 22.0 ],
 					"text" : "r speed"
 				}
 
@@ -250,7 +250,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 424.0, 129.0, 45.0, 22.0 ],
+					"patching_rect" : [ 411.0, 228.0, 45.0, 22.0 ],
 					"text" : "s clock"
 				}
 
@@ -261,7 +261,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 614.0, 216.0, 51.0, 22.0 ],
+					"patching_rect" : [ 591.0, 245.5, 51.0, 22.0 ],
 					"text" : "s speed"
 				}
 
@@ -274,7 +274,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 614.0, 179.0, 50.0, 22.0 ]
+					"patching_rect" : [ 591.0, 208.5, 50.0, 22.0 ]
 				}
 
 			}
@@ -286,7 +286,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 424.0, 30.0, 24.0, 24.0 ],
+					"patching_rect" : [ 411.0, 129.0, 24.0, 24.0 ],
 					"svg" : ""
 				}
 
@@ -298,7 +298,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 424.0, 84.0, 69.0, 22.0 ],
+					"patching_rect" : [ 411.0, 183.0, 69.0, 22.0 ],
 					"text" : "metro 1000"
 				}
 
