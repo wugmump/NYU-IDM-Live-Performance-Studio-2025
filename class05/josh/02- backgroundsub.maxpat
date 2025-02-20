@@ -10,9 +10,58 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 236.0, 212.0, 1000.0, 780.0 ],
+		"rect" : [ 93.0, 96.0, 1000.0, 780.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
+				"box" : 				{
+					"format" : 6,
+					"id" : "obj-17",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 107.0, 425.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-15",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 86.0, 393.0, 50.5, 22.0 ],
+					"text" : "jit.3m"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-14",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "jit_matrix", "" ],
+					"patching_rect" : [ 54.5, 299.5, 64.0, 22.0 ],
+					"text" : "cv.jit.dilate"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-10",
+					"maxclass" : "jit.pwindow",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "jit_matrix", "" ],
+					"patching_rect" : [ 323.5, 291.0, 186.000005543231964, 144.666670978069305 ],
+					"sync" : 1
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-31",
 					"maxclass" : "newobj",
@@ -142,7 +191,7 @@
 
 							}
  ],
-						"originid" : "pat-128"
+						"originid" : "pat-304"
 					}
 ,
 					"patching_rect" : [ 645.0, 505.0, 54.0, 22.0 ],
@@ -180,7 +229,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
 					"patching_rect" : [ 54.0, 346.0, 143.0, 35.0 ],
-					"presentation_linecount" : 2,
 					"style" : "default",
 					"text" : "cv.jit.label @charmode 1 @threshold 20"
 				}
@@ -193,7 +241,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 54.0, 479.0, 173.0, 22.0 ],
+					"patching_rect" : [ 54.0, 537.5, 173.0, 22.0 ],
 					"style" : "default",
 					"text" : "cv.jit.blobs.centroids.draw"
 				}
@@ -206,7 +254,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 54.0, 418.0, 139.0, 22.0 ],
+					"patching_rect" : [ 54.0, 467.5, 139.0, 22.0 ],
 					"style" : "default",
 					"text" : "cv.jit.blobs.centroids"
 				}
@@ -221,7 +269,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 83.0, 258.0, 150.0, 22.0 ]
+					"patching_rect" : [ 83.5, 230.0, 150.0, 22.0 ]
 				}
 
 			}
@@ -232,8 +280,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 54.0, 287.0, 82.0, 22.0 ],
-					"text" : "jit.> @val 200"
+					"patching_rect" : [ 54.5, 259.0, 82.0, 22.0 ],
+					"text" : "jit.> @val 100"
 				}
 
 			}
@@ -266,7 +314,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 54.0, 216.0, 190.0, 22.0 ],
+					"patching_rect" : [ 54.5, 188.0, 190.0, 22.0 ],
 					"text" : "jit.absdiff @in2_name background"
 				}
 
@@ -337,13 +385,45 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
+					"source" : [ "obj-14", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-17", 0 ],
+					"source" : [ "obj-15", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-10", 0 ],
+					"order" : 0,
 					"source" : [ "obj-19", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-14", 0 ],
+					"order" : 1,
+					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
+					"order" : 0,
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-25", 0 ],
+					"order" : 1,
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -366,7 +446,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-30", 0 ],
-					"midpoints" : [ 63.5, 459.5, 654.5, 459.5 ],
+					"midpoints" : [ 63.5, 509.3046875, 654.5, 509.3046875 ],
 					"order" : 0,
 					"source" : [ "obj-25", 0 ]
 				}
@@ -418,7 +498,7 @@
 
 			}
  ],
-		"originid" : "pat-11",
+		"originid" : "pat-302",
 		"parameters" : 		{
 			"obj-3::obj-14" : [ "toggle[2]", "toggle[2]", 0 ],
 			"obj-3::obj-25" : [ "toggle", "toggle", 0 ],
@@ -458,6 +538,10 @@
 				"type" : "iLaX"
 			}
 , 			{
+				"name" : "cv.jit.dilate.mxo",
+				"type" : "iLaX"
+			}
+, 			{
 				"name" : "cv.jit.label.mxo",
 				"type" : "iLaX"
 			}
@@ -470,10 +554,6 @@
 				"bootpath" : "C74:/interfaces",
 				"type" : "TEXT",
 				"implicit" : 1
-			}
-, 			{
-				"name" : "jit.absdiff.mxo",
-				"type" : "iLaX"
 			}
  ],
 		"autosave" : 0
