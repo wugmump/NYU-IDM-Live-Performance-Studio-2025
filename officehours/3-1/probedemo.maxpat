@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1955.0, -58.0, 918.0, 654.0 ],
+		"rect" : [ 1771.0, -75.0, 375.0, 464.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
@@ -20,7 +20,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 207.0, 276.0, 24.0, 24.0 ],
+					"patching_rect" : [ 44.0, 103.0, 24.0, 24.0 ],
 					"svg" : ""
 				}
 
@@ -38,9 +38,10 @@
 					"maxclass" : "bpatcher",
 					"name" : "jg.vidprobe.maxpat",
 					"numinlets" : 1,
-					"numoutlets" : 0,
-					"offset" : [ 4.0, -61.0 ],
-					"patching_rect" : [ 242.0, 421.0, 197.0, 165.0 ],
+					"numoutlets" : 1,
+					"offset" : [ 4.0, 2.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 79.0, 248.0, 194.0, 133.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -52,7 +53,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 333.0, 163.0, 47.0, 22.0 ],
+					"patching_rect" : [ 79.0, 104.0, 47.0, 22.0 ],
 					"text" : "jit.bang"
 				}
 
@@ -64,7 +65,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 333.0, 214.0, 45.0, 22.0 ],
+					"patching_rect" : [ 79.0, 198.0, 45.0, 22.0 ],
 					"text" : "jit.grab"
 				}
 
@@ -76,7 +77,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "jit_matrix", "bang", "" ],
-					"patching_rect" : [ 69.0, 85.0, 175.0, 22.0 ],
+					"patching_rect" : [ 44.0, 54.0, 175.0, 22.0 ],
 					"text" : "jit.world @enable 1 @floating 1"
 				}
 
@@ -104,10 +105,10 @@
 
 			}
  ],
-		"originid" : "pat-97",
+		"originid" : "pat-107",
 		"dependency_cache" : [ 			{
 				"name" : "jg.vidprobe.maxpat",
-				"bootpath" : "~/temp",
+				"bootpath" : "~/Documents/NYU/DMGY-6103-2025/officehours/3-1",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1

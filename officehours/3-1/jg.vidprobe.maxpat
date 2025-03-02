@@ -10,10 +10,22 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 2252.0, -66.0, 918.0, 654.0 ],
+		"rect" : [ 2252.0, -66.0, 1069.0, 817.0 ],
 		"openinpresentation" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
+				"box" : 				{
+					"comment" : "",
+					"id" : "obj-1",
+					"index" : 0,
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 79.0, 224.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-29",
 					"maxclass" : "message",
@@ -22,7 +34,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 175.0, 319.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 29.0, 67.0, 50.0, 22.0 ],
+					"presentation_rect" : [ 34.0, 4.0, 50.0, 22.0 ],
 					"text" : "it's off"
 				}
 
@@ -86,7 +98,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 54.0, 81.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 66.0, 24.0, 24.0 ],
+					"presentation_rect" : [ 5.0, 3.0, 24.0, 24.0 ],
 					"svg" : ""
 				}
 
@@ -112,7 +124,7 @@
 					"outlettype" : [ "jit_matrix", "" ],
 					"patching_rect" : [ 54.0, 382.0, 189.0, 130.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 94.0, 189.0, 130.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 189.0, 130.0 ],
 					"sync" : 1
 				}
 
@@ -120,7 +132,16 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"order" : 0,
+					"source" : [ "obj-16", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
+					"order" : 1,
 					"source" : [ "obj-16", 0 ]
 				}
 
@@ -177,15 +198,7 @@
 
 			}
  ],
-		"originid" : "pat-3",
-		"parameters" : 		{
-			"parameterbanks" : 			{
-
-			}
-,
-			"inherited_shortname" : 1
-		}
-,
+		"originid" : "pat-117",
 		"dependency_cache" : [  ],
 		"autosave" : 0
 	}
