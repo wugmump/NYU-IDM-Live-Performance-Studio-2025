@@ -39,9 +39,9 @@
 					"name" : "jg.vidprobe.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"offset" : [ 4.0, 2.0 ],
+					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 79.0, 248.0, 194.0, 133.0 ],
+					"patching_rect" : [ 79.0, 248.0, 128.0, 128.0 ],
 					"viewvisibility" : 1
 				}
 
