@@ -10,17 +10,17 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 59.0, 111.0, 667.0, 703.0 ],
+		"rect" : [ 193.0, 92.0, 971.0, 704.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-22",
-					"maxclass" : "jit.pwindow",
+					"id" : "obj-23",
+					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 53.0, 791.0, 80.0, 60.0 ],
-					"sync" : 1
+					"outlettype" : [ "bang", "" ],
+					"patching_rect" : [ 53.0, 796.0, 125.0, 22.0 ],
+					"text" : "jit.window @floating 1"
 				}
 
 			}
@@ -68,7 +68,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 151.0, 680.0, 331.0, 22.0 ],
-					"text" : "https://cdn2.thecatapi.com/images/9K-Lvmafl.jpg"
+					"text" : "https://cdn2.thecatapi.com/images/5u9.jpg"
 				}
 
 			}
@@ -140,7 +140,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 155.0, 417.0, 650.0, 22.0 ],
-					"text" : "{\\\"id\\\":\\\"9K-Lvmafl\\\"\\,\\\"url\\\":\\\"https://cdn2.thecatapi.com/images/9K-Lvmafl.jpg\\\"\\,\\\"width\\\":3662\\,\\\"height\\\":2744}"
+					"text" : "{\\\"id\\\":\\\"5u9\\\"\\,\\\"url\\\":\\\"https://cdn2.thecatapi.com/images/5u9.jpg\\\"\\,\\\"width\\\":594\\,\\\"height\\\":700}"
 				}
 
 			}
@@ -230,7 +230,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 65.0, 320.0, 650.0, 22.0 ],
-					"text" : "[{\\\"id\\\":\\\"9K-Lvmafl\\\"\\,\\\"url\\\":\\\"https://cdn2.thecatapi.com/images/9K-Lvmafl.jpg\\\"\\,\\\"width\\\":3662\\,\\\"height\\\":2744}]"
+					"text" : "[{\\\"id\\\":\\\"5u9\\\"\\,\\\"url\\\":\\\"https://cdn2.thecatapi.com/images/5u9.jpg\\\"\\,\\\"width\\\":594\\,\\\"height\\\":700}]"
 				}
 
 			}
@@ -378,7 +378,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-22", 0 ],
+					"destination" : [ "obj-23", 0 ],
 					"source" : [ "obj-19", 0 ]
 				}
 
@@ -502,7 +502,7 @@
 
 			}
  ],
-		"originid" : "pat-3",
+		"originid" : "pat-4",
 		"dependency_cache" : [  ],
 		"autosave" : 0
 	}
