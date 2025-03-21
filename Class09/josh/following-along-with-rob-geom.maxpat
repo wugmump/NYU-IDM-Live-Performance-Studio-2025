@@ -10,16 +10,66 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 134.0, 92.0, 798.0, 722.0 ],
+		"rect" : [ 2807.0, -18.0, 798.0, 722.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-42",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 152.0, 550.0, 155.0, 22.0 ],
+					"text" : "jit.gl.handle @auto_rotate 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attr" : "position",
+					"id" : "obj-40",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 381.0, 535.0, 213.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attr" : "enable",
+					"id" : "obj-38",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 582.0, 347.0, 150.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-32",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 575.0, 381.0, 85.0, 22.0 ],
+					"text" : "jit.gl.physdraw"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-19",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_geometry", "" ],
-					"patching_rect" : [ 262.0, 446.0, 168.0, 22.0 ],
+					"patching_rect" : [ 294.0, 362.0, 168.0, 22.0 ],
 					"text" : "jit.geom.togeom @type matrix"
 				}
 
@@ -31,7 +81,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 272.0, 386.0, 89.0, 22.0 ],
+					"patching_rect" : [ 294.0, 333.0, 89.0, 22.0 ],
 					"text" : "jit.gl.asyncread"
 				}
 
@@ -43,7 +93,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 118.0, 557.0, 93.0, 22.0 ],
+					"patching_rect" : [ 107.0, 468.0, 93.0, 22.0 ],
 					"text" : "jit.geom.tomesh"
 				}
 
@@ -55,7 +105,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_geometry", "" ],
-					"patching_rect" : [ 118.0, 515.0, 190.0, 22.0 ],
+					"patching_rect" : [ 107.0, 426.0, 190.0, 22.0 ],
 					"text" : "jit.geom.displace @strength 1.625"
 				}
 
@@ -67,20 +117,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_geometry", "" ],
-					"patching_rect" : [ 105.0, 416.0, 165.0, 22.0 ],
+					"patching_rect" : [ 94.0, 327.0, 165.0, 22.0 ],
 					"text" : "jit.geom.shape @shape torus"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontsize" : 40.165856861157863,
-					"id" : "obj-16",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 196.0, 25.0, 241.0, 51.0 ],
-					"text" : "PBR and IBL"
 				}
 
 			}
@@ -181,7 +219,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_gl_texture", "" ],
 					"patching_rect" : [ 283.0, 581.0, 436.0, 22.0 ],
-					"text" : "jit.gl.camera @tripod 1 @locklook 1 @lookat 0 0 0 @far_clip 20. @position 0 2 5"
+					"text" : "jit.gl.camera @tripod 1 @locklook 1 @lookat 0 0 0 @far_clip 20. @position 0 0 2"
 				}
 
 			}
@@ -217,7 +255,7 @@
 					"numinlets" : 9,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 87.0, 629.0, 103.0, 22.0 ],
+					"patching_rect" : [ 90.5, 577.0, 103.0, 22.0 ],
 					"text" : "jit.gl.mesh"
 				}
 
@@ -243,7 +281,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 78.0, 457.0, 150.0, 22.0 ]
+					"patching_rect" : [ 67.0, 368.0, 150.0, 22.0 ]
 				}
 
 			}
@@ -303,6 +341,27 @@
 				"patchline" : 				{
 					"destination" : [ "obj-67", 0 ],
 					"source" : [ "obj-33", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-32", 0 ],
+					"source" : [ "obj-38", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"source" : [ "obj-40", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-37", 0 ],
+					"source" : [ "obj-42", 0 ]
 				}
 
 			}
