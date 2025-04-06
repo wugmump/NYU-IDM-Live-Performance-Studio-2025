@@ -275,6 +275,7 @@
 			}
 , 			{
 				"box" : 				{
+					"autorestore" : "Vsynth.json",
 					"hidden" : 1,
 					"id" : "obj-10",
 					"linecount" : 2,
@@ -820,6 +821,13 @@
 		}
 ,
 		"dependency_cache" : [ 			{
+				"name" : "Vsynth.json",
+				"bootpath" : "~/Documents/NYU/DMGY-6103-2025/randomshit",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "addmod.js",
 				"bootpath" : "~/Documents/Max 9/Packages/Vsynth/javascript",
 				"patcherrelativepath" : "../../../Max 9/Packages/Vsynth/javascript",
