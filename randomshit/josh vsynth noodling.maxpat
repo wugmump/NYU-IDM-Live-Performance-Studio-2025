@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1346.0, -325.0, 2492.0, 1319.0 ],
+		"rect" : [ 34.0, 92.0, 1244.0, 722.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
@@ -284,16 +284,15 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1174.0, 787.0, 138.0, 35.0 ],
-					"presentation_linecount" : 2,
 					"priority" : 					{
-						"vs_wfg_tri_core::pm_range" : -1,
-						"vs_wfg_tri_core::fm_range" : -1,
 						"vs_wfg_tri_core::freq_range" : -1,
-						"vs_wfg_3::wfg3_fm_range" : -1,
+						"vs_wfg_tri_core::fm_range" : -1,
+						"vs_wfg_tri_core::pm_range" : -1,
 						"vs_wfg_3::wfg3_freq_range" : -1,
+						"vs_wfg_3::wfg3_fm_range" : -1,
 						"vs_wfg_3::wfg3_pm_range" : -1,
-						"vs_wfg_shapes::shapewfg_fm_range" : -1,
-						"vs_wfg_shapes::shapewfg_freq_range" : -1
+						"vs_wfg_shapes::shapewfg_freq_range" : -1,
+						"vs_wfg_shapes::shapewfg_fm_range" : -1
 					}
 ,
 					"saved_object_attributes" : 					{
@@ -516,7 +515,7 @@
 
 			}
  ],
-		"originid" : "pat-8",
+		"originid" : "pat-4",
 		"parameters" : 		{
 			"obj-11::obj-10" : [ "rgbmix_g", "G", 0 ],
 			"obj-11::obj-18" : [ "rgbmix_b", "B", 0 ],
